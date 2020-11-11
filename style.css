@@ -41,6 +41,13 @@
     border: none;
     cursor: pointer;
     }
+    .search {
+    background-color: #4CAF50;
+    color: green;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    }
     
     
     
