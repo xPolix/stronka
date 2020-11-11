@@ -40,7 +40,8 @@
     font-size: 16px;
     border: green;
     cursor: pointer;
-    max-width: 16px;
+    width: 16px;
+    height: 16px;
     }
     .search {
     background-color: #80dfff;
