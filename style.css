@@ -59,6 +59,7 @@
   box-shadow: none;
   font-size: 16px;
   padding: 16px;
+  outline: none;
   border: none;
   cursor: pointer;
   } 
