@@ -33,7 +33,8 @@
     font-size: 20pt;
     font-family: verdan;
     }
-    .downloadbttn {
+
+    downloadbttn {
     background-color: #4CAF50;
     color: white;
     padding: 16px;
