@@ -54,6 +54,7 @@
   .dropbtn {
   background-color: #4dd2ff;
   border-color: #4dd2ff;
+  box-shadow: none;
   font-size: 16px;
   padding: 16px;
   border: none;
