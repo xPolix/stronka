@@ -59,10 +59,9 @@
     .resetButton{ outline: none; }
     
     audio::-webkit-media-controls-panel {
-    background-color: #4dd2ff;
+    background-color: #00ccff;
     outline: none;
     color: #4dd2ff;
-    border: 3px solid #4dd2ff;
     }
 
 
