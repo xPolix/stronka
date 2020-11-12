@@ -63,6 +63,12 @@
     outline: none;
     color: #4dd2ff;
     }
+    .logo {
+    width:200px;
+    height:200px;
+    position:relative;
+    top:0px;
+    }
 
 
 
