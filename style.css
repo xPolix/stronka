@@ -53,6 +53,7 @@
     padding: 16px;
     font-size: 18px;
     border: none;
+    outline: none;
     }
     .resetButton{ outline: none; }
     
