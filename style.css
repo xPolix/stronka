@@ -41,7 +41,7 @@
     font-family:verdana;
     border: green;
     cursor: pointer;
-    width: 149px;
+    width: auto;
     height: 50px;
     outline: none;
     }
