@@ -12,7 +12,7 @@
   
 <b><p id="demo"></p></b>
 <br>  
-<h1 style="font-size: 30px;">DNI GODZINY MINUTY SEKUNDY</h1><br><br><br><br><br>
+<h2 style="font-size: 30px;">DNI GODZINY MINUTY SEKUNDY</h2>
 
 
 
@@ -22,6 +22,14 @@ h1 {
   font-family:arial;
   font-size: 75px;
 }
+h2 {
+  position: absolute;
+  text-align: center;
+  font-family: arial;
+  font-size: 30px;
+}
+  
+  
   
 p {
   text-align: center;
@@ -51,7 +59,7 @@ var x = setInterval(function() {
     
   // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML = days + "&nbsp;&nbsp;&nbsp;" + hours + "&nbsp;&nbsp;&nbsp;"
-  + minutes + "&nbsp;&nbsp;&nbsp;" + seconds + "&nbsp;&nbsp;&nbsp;";
+  + minutes + "&nbsp;&nbsp;&nbsp;" + seconds + "";
     
   // If the count down is over, write some text 
   if (distance < 0) {
