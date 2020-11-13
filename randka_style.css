@@ -5,13 +5,13 @@
   font-size:40px;
   
    /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 5s infinite; 
+  -webkit-animation: rainbow 15s infinite; 
   
   /* Internet Explorer */
-  -ms-animation: rainbow 5s infinite;
+  -ms-animation: rainbow 15s infinite;
   
   /* Standar Syntax */
-  animation: rainbow 5s infinite; 
+  animation: rainbow 15s infinite; 
 }
 /* Standar Syntax */
 @keyframes rainbow{
