@@ -15,24 +15,13 @@
 <center><h2 style="font-size: 30px; text-align-last: center;">DNI <br> GODZ. MIN. SEK.</h2></center>
 <br><br><br>
   <span style="font-size: 30px; text-align-last: center;">
-<span id="dni"> </span> <br>1
-<span id="godz"><br> </span>  <br>2
-<span id="min"><br> </span> <br>3
-<span id="sek"><br> </span> <br>4
+<span id="dni"> </span> <br>DNI
+<span id="godz"><br> </span>  <br>GODZ
+<span id="min"><br> </span> <br>MIN
+<span id="sek"><br> </span> <br>SEK
   </span>
-  
-  
-    <div id="countdown">
-    <ul>
-      <li><span id="days"></span>days</li>
-      <li><span id="hours"></span>Hours</li>
-      <li><span id="minutes"></span>Minutes</li>
-      <li><span id="seconds"></span>Seconds</li>
-    </ul>
-  </div>
-  
-  
 
+  
 <style>
 h1 {
   text-align: center;
@@ -80,9 +69,6 @@ var x = setInterval(function() {
   document.getElementById("godz").innerHTML = hours;
   document.getElementById("min").innerHTML = minutes;
   document.getElementById("sek").innerHTML = seconds;
-  
-  countdown = document.getElementById("countdown"),
-  countdown.style.display = "none";  
   
   // If the count down is over, write some text 
   if (distance < 0) {
