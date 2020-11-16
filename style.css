@@ -91,6 +91,7 @@ h6 {
 }
 .zoom {
   padding: 50px;
+  border: 5px solid #555;
   background-color: green;
   transition: transform .3s;
   width: 150px;
