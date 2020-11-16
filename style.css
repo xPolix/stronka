@@ -106,6 +106,7 @@ h6 {
 }
 zoomimg {
    width: 100%;
+   position: absolute;
 }
 
 
