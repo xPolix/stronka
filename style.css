@@ -70,6 +70,13 @@
     top:0px;
     }
 
+p {
+  text-align: center;
+  font-family:arial;
+  font-size: 60px;
+}
+  
+  
 li {
   display: inline-block;
   font-size: 1.5em;
@@ -82,6 +89,8 @@ li span {
   display: block;
   font-size: 4.5rem;
 }
+
+
 h6 {
   position: relative;
   top: -100px;
