@@ -103,7 +103,7 @@ h6 {
   -webkit-transform: scale(1.25); /* Safari 3-8 */
   transform: scale(1.25);
 }
-.zoomimage {
+.zoomimg {
    position: absolute;
    color: green;
 }
