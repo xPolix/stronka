@@ -104,8 +104,9 @@ h6 {
   transform: scale(1.25);
 }
 .zoomimg {
-   position: absolute;
    color: green;
+   width: 150px;
+   height: 250px;
 }
 
 
