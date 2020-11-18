@@ -76,7 +76,7 @@ p {
   
   
 li {
-  display: inline-block;
+  display: inline-table;
   list-style-type: none;
   text-transform: uppercase;
   padding: 1em;
