@@ -11,7 +11,7 @@ websocket.onopen = function(event) {
 
 // on websocket close:
 websocket.onclose = function(event) {
-    MessageAdd('<div class="message blue">You have been disconnected.</div>');
+    MessageAdd('<div class="message blue">disconnected.</div>');
 };
 
 
