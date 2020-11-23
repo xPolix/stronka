@@ -1,5 +1,5 @@
 // initialize websockets:
-var ws_uri = "ws://xpoli.github.io/stronka/chat.html:9600";
+var ws_uri = "ws://xpoli.github.io/stronka/:9600";
 var websocket = new WebSocket(ws_uri);
 
 
