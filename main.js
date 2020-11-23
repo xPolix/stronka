@@ -1,5 +1,5 @@
 // initialize websockets:
-var ws_uri = "ws://127.0.0.1:9600";
+var ws_uri = "ws://xpoli.github.io/stronka/chat.html:9600";
 var websocket = new WebSocket(ws_uri);
 
 
@@ -17,7 +17,7 @@ websocket.onclose = function(event) {
 
 // on websocket error:
 websocket.onerror = function(event) {
-    MessageAdd('<div class="message red">Connection to chat failed.</div>');
+    MessageAdd('<div class="message red">ERROR.</div>');
 };
 
 
