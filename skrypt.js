@@ -1,5 +1,5 @@
 // initialize websockets:
-var ws_uri = "ws://github.io:9600";
+var ws_uri = "ws://github.com:8443";
 var websocket = new WebSocket(ws_uri);
 
 
