@@ -152,8 +152,8 @@ h5 {
   display: none;
   position: fixed;
   right: 6px;
-  border: 3px solid #00ccff;
-  background-color: #80dfff;
+  border: 3px solid #000;
+  background-color: rgba(0,0,0,0.25);
   min-width: 16px;
   box-shadow: 0px 8px 16px 0px rgba(0, 96, 128, 0.5);
   z-index: 2;
@@ -167,7 +167,7 @@ h5 {
   }
   
   .dropdown-content a:hover {
-   background-color: #00ccff;
+   background-color: rgba(0,0,0,0.75);
    }
 
   .dropdown:hover .dropdown-content {
