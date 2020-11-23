@@ -133,7 +133,7 @@ h5 {
     
     
   .dropbtn {
-  background-color: #2a2937;
+  background-color: rgba(0,0,0,0);;
   border-color: #4dd2ff;
   box-shadow: none;
   font-size: 16px;
@@ -174,5 +174,5 @@ h5 {
   display: block;
   }
   .dropdown:hover .dropbtn {
-  background-color: #00ccff;
+  background-color: rgba(0,0,0,0.5);;
   }
