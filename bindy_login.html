@@ -4,9 +4,9 @@
 </head>
 <body>
 <form>
-    <label for="pswd">Enter your password: </label>
+    <label for="pswd">Podaj hasło: </label>
     <input type="password" id="pswd">
-    <input type="button" value="Submit" onclick="checkPswd();" />
+    <input type="button" value="Submit" onclick="checkPswd();" class="dbutton" />
 </form>
 <!--Function to check password the already set password is admin-->
 <script type="text/javascript">
@@ -14,10 +14,10 @@
         var confirmPassword = "admin";
         var password = document.getElementById("pswd").value;
         if (password == confirmPassword) {
-             window.location="bindy.html";
+             window.location="bindy";
         }
         else{
-            alert("Passwords do not match.");
+            alert("Błędne hasło :(");
         }
     }
 </script>
