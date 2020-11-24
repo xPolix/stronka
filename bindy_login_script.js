@@ -1,10 +1,12 @@
 function checkPswd() {
         var confirmPassword = "admin";
+        var confirmKod = "16.";
         var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
-             window.location="52.2391541,16.8626765";
+        var kod = document.getElementById("pswd").value;
+        if (password == confirmPassword && kod == confirmKod) {
+             window.location="52.2391541,"+ kod +"8626765";
         }
         else{
-            alert("Błędne hasło :(");
+            alert("Błędne hasło lub kod :(");
         }
     }
