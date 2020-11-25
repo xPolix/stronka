@@ -7,10 +7,15 @@ function checkPswd() {
         }
         else{
             alert("Błędne hasło lub kod :((");
+            changeBackground(red);
         }
     }
 
 
 function goBack() {
   window.history.back();
+}
+
+function changeBackground(color) {
+   document.body.style.background = color;
 }
