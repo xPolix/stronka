@@ -6,7 +6,7 @@ function checkPswd() {
              window.location="52.2391541,"+ kod +"8626765";
         }
         else{
-            alert("Błędne hasło lub kod :(");
+            alert("Błędne hasło lub kod :((");
             changeBackground(red);
         }
     }
