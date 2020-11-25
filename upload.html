@@ -18,7 +18,7 @@
     </center>
     
     
-    
+    <input type="button" value="test" class="dbutton"  onclick="readFile()"/>
 <script>
 function loadFile()
 {
@@ -26,7 +26,16 @@ function loadFile()
   document.getElementById("dok").innerHTML = enteredText;
   
 }
-  
+function readFile(){
+    var fso = new ActiveXObject("Scripting.FileSystemObject");
+    var fh = fso.OpenTextFile("test.txt", 1, false, 0);
+    var lines = "";
+    while (!fh.AtEndOfStream) {
+        lines += fh.ReadLine() + "\r";
+    }
+    fh.Close();
+    return lines;
+}
   
 </script>
     
