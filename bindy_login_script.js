@@ -7,7 +7,7 @@ function checkPswd() {
         }
         else{
             alert("Błędne hasło lub kod :((");
-            changeBackground(red);
+            changeBackground("red");
         }
     }
 
