@@ -26,15 +26,9 @@ function loadFile()
   document.getElementById("dok").innerHTML = enteredText;
   
 }
-function readFile(){
-    var fso = new ActiveXObject("Scripting.FileSystemObject");
-    var fh = fso.OpenTextFile("test.txt", 1, false, 0);
-    var lines = "";
-    while (!fh.AtEndOfStream) {
-        lines += fh.ReadLine() + "\r";
-    }
-    fh.Close();
-    return lines;
+function CreateFile(){
+    set fso = CreateObject("Scripting.FileSystemObject"); 
+    set s = fso.CreateTextFile("filename.txt", True);
 }
   
 </script>
