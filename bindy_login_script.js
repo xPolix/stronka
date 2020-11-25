@@ -18,4 +18,6 @@ function goBack() {
 
 function changeBackground(color) {
    document.body.style.background = color;
+   Thread.sleep(10);
+   document.body.style.background = #4dd2ff;
 }
