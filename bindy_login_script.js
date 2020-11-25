@@ -18,6 +18,6 @@ function goBack() {
 
 function changeBackground(color) {
    document.body.style.background = color;
-   Thread.sleep(10);
+   Thread.sleep(3);
    alert("a teraz kolor na blue");
 }
