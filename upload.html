@@ -25,8 +25,18 @@ function loadFile()
 {
   var enteredText = document.getElementById("EnteredMessage").value;
   document.getElementById("dok").innerHTML = enteredText;
+    
+  const { writable, readable } = new TextEncoderStream()
+  const writer = writable.getWriter()
+
+  readable.pipeTo(streamSaver.createWriteStream('out.txt'))
+
+  writer.write('Hello; world') // write a chunk
+  writer.write('; 22') // write a chunk
+  writer.close() // end the stream
+  // writer.abort() // abort saving the file 
 }
-  
+
 </script>
     
     </body>
