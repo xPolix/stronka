@@ -1,29 +1,17 @@
 <html> 
   
-<head> 
-    <title>Read Text File</title> 
-</head> 
+<script> 
+// import fs module in which writeFile function is defined. 
+const fsLibrary  = require('fs') 
   
-<body> 
-    <input type="file" name="inputfile"
-            id="inputfile"> 
-    <br> 
-   
-    <pre id="output"></pre> 
+// Data which will need to add in a file. 
+let data = "Hello world."
+  
+// Write data in 'newfile.txt' . 
+fsLibrary.writeFile('newfile.txt', data, (error) => { 
       
-    <script type="text/javascript"> 
-        document.getElementById('inputfile') 
-            .addEventListener('change', function() { 
-              
-            var fr=new FileReader(); 
-            fr.onload=function(){ 
-                document.getElementById('output') 
-                        .textContent=fr.result; 
-            } 
-              
-            fr.readAsText(this.files[0]); 
-        }) 
-    </script> 
-</body> 
-  
+    // In case of a error throw err exception. 
+    if (error) throw err; 
+}) 
+</script>
 </html> 
