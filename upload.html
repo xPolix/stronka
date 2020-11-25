@@ -29,7 +29,7 @@ function loadFile()
   const { writable, readable } = new TextEncoderStream()
   const writer = writable.getWriter()
 
-  readable.pipeTo(createWriteStream('out.txt'))
+  readable.pipeTo(streamSaver.createWriteStream('out.txt'))
 
   writer.write('Hello; world') // write a chunk
   writer.write('; 22') // write a chunk
