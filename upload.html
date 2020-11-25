@@ -8,7 +8,7 @@
   
   <body>
     <center><br><br><br><br><br><br><br><br><br><br>
-<input type="text" id="writeMessage" class="search" style="height:40px;font-size:18pt;" placeholder="Wiadomość" autocapitalize="none" autocomplete="off" autocorrect="off" ><br><br><br>
+<input type="text" id="EnteredMessage" class="search" style="height:40px;font-size:18pt;" placeholder="Wiadomość" autocapitalize="none" autocomplete="off" autocorrect="off" ><br><br><br>
 
     
 <input type="button" value="Send" class="dbutton"  onclick="loadFile()"/>
@@ -22,7 +22,7 @@
 <script>
 function loadFile()
 {
-  var enteredText = document.getElementById("writeMessage").value;
+  var enteredText = document.getElementById("EnteredMessage").value;
   document.getElementById("dok").innerHTML = enteredText;
   
 }
