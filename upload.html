@@ -24,8 +24,21 @@ function loadFile()
 {
   var enteredText = document.getElementById("EnteredMessage").value;
   document.getElementById("dok").innerHTML = enteredText;
-  
 }
+  
+function WriteToFile() {
+ 
+    set fso = CreateObject("Scripting.FileSystemObject"); 
+    set s   = fso.CreateTextFile("test.txt", True);
+ 
+    var firstName = document.getElementById('enteredMessage');
+ 
+    s.writeline("First Name :" + firstName);
+ 
+    s.writeline("-----------------------------");
+    s.Close();
+  
+  
   
 </script>
     
