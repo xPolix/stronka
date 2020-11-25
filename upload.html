@@ -1,13 +1,34 @@
 <html> 
   <body>
 <!-- The `multiple` attribute lets users select multiple files. -->
-<input type="file" id="file-selector" multiple>
+<input type="file" id="axe" OnClick="myFunction()">
+    
+    
+    
+    
+    
+    
+    
 <script>
-  const fileSelector = document.getElementById('file-selector');
-  fileSelector.addEventListener('change', (event) => {
-    const fileList = event.target.files;
-    console.log(https://github.com/xPolix/stronka/blob/master/index.html);
-  });
+function loadFile(uri)
+{
+    var r = new XMLHttpRequest();
+    document.write("trying to open: " + uri);
+    r.open('GET', uri, true);
+    r.send(null);
+    r.onreadystatechange = function()
+    {
+        if (r.readyState == 4)
+        {
+            myFunction();
+        }
+    }
+}
+
+function myFunction()
+{
+    document.write("sup");
+}
 </script>
     </body>
 </html> 
