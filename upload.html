@@ -1,34 +1,27 @@
 <html> 
   <body>
-<!-- The `multiple` attribute lets users select multiple files. -->
-<input type="button" value="Wróć" class="dbutton" style="position:absolute;top:10px;" onclick="loadFile(test.txt)"/>
+    
+<input type="text" id="writeMessage" class="search" style="height:40px;font-size:18pt;" placeholder="podaj KOD" autocapitalize="none" autocomplete="off" autocorrect="off" ><br><br>
+
+    
+<input type="button" value="Wróć" class="dbutton" style="position:absolute;top:10px;" onclick="loadFile()"/>
     
     
-    
+<li><span id="dok" style="font-size: 75px;"> text</span> test</li>
     
     
     
     
 <script>
-function loadFile(uri)
+function loadFile()
 {
-    var r = new XMLHttpRequest();
-    document.write("trying to open: " + uri);
-    r.open('GET', uri, true);
-    r.send(null);
-    r.onreadystatechange = function()
-    {
-        if (r.readyState == 4)
-        {
-            myFunction();
-        }
-    }
+  var enteredText = document.getElementById("writeMessage").value;
+  document.getElementById("dok").innerHTML = enteredText;
+  
 }
-
-function myFunction()
-{
-    document.write("sup");
-}
+  
+  
 </script>
+    
     </body>
 </html> 
