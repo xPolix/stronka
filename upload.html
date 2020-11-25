@@ -1,17 +1,24 @@
 <html> 
-  
+  <body>
+    
+    
+    
+    
+    <input type="button" value="test" onclick="read_text_file(index.html);" class="dbutton">
+    
 <script> 
-// import fs module in which writeFile function is defined. 
-const fsLibrary  = require('fs') 
-  
-// Data which will need to add in a file. 
-let data = "Hello world."
-  
-// Write data in 'newfile.txt' . 
-fsLibrary.writeFile('newfile.txt', data, (error) => { 
-      
-    // In case of a error throw err exception. 
-    if (error) throw err; 
-}) 
+function read_text_file (file) {	
+	if(file !=null) {
+		var all_string = "";
+
+		file.open("r");
+		while(!file.eof) { 
+			all_string += (file.readln() + "\n") ;
+		};
+		file.close();
+	};	
+	return all_string;
+};
 </script>
+    </body>
 </html> 
