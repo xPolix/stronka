@@ -1,11 +1,29 @@
-<html>
-<body>
-
-<form action="upload.php" method="post" enctype="multipart/form-data">
-  Select image to upload:
-  <input type="file" name="fileToUpload" id="fileToUpload">
-  <input type="submit" value="Upload Image" name="submit">
-</form>
-
-</body>
-</html>
+<html> 
+  
+<head> 
+    <title>Read Text File</title> 
+</head> 
+  
+<body> 
+    <input type="file" name="inputfile"
+            id="inputfile"> 
+    <br> 
+   
+    <pre id="output"></pre> 
+      
+    <script type="text/javascript"> 
+        document.getElementById('inputfile') 
+            .addEventListener('change', function() { 
+              
+            var fr=new FileReader(); 
+            fr.onload=function(){ 
+                document.getElementById('output') 
+                        .textContent=fr.result; 
+            } 
+              
+            fr.readAsText(this.files[0]); 
+        }) 
+    </script> 
+</body> 
+  
+</html> 
