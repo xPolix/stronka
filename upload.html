@@ -18,7 +18,7 @@
     </center>
     
     
-    <input type="button" value="test" class="dbutton"  onclick="readFile()"/>
+    <input type="button" value="test" class="dbutton"  onclick="CreateFile()"/>
 <script>
 function loadFile()
 {
@@ -26,6 +26,7 @@ function loadFile()
   document.getElementById("dok").innerHTML = enteredText;
   
 }
+  
 function CreateFile(){
     set fso = CreateObject("Scripting.FileSystemObject"); 
     set s = fso.CreateTextFile("filename.txt", True);
