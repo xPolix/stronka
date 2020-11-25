@@ -9,3 +9,8 @@ function checkPswd() {
             alert("Błędne hasło lub kod :((");
         }
     }
+
+
+function goBack() {
+  window.history.back();
+}
