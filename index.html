@@ -83,6 +83,7 @@
       <div class="fixed" id="chat" style="right: 350; top: auto; bottom: 450;">
       <input type="button" value="X" class="dbutton" style="position:absolute;top:-55px;color:red;background-color:#fe5050;font-weight:bold;" onclick="hideElement()"/>
       <iframe src="https://deadsimplechat.com/k9aPsh_8-" style="width: 400px; height: 500px; border: none;border-radius: 16px;"></iframe></div>
+      <input type="button" value="Chat" class="dbutton" style="position:absolute;bottom:10px;color:green;background-color:blue;font-weight:bold;" onclick="hideElement()"/>
       <br><br><br>
     <div class="center">
       <p>END.</p>
@@ -92,7 +93,13 @@
   function hideElement()
   {
   document.getElementById("chat").style.display = "none";
+  document.getElementById("enableChat").style.display = "block";
   }
+  function showElement()
+    {
+      document.getElementById("enableChat").style.display = "none";
+      document.getElementById("chat").style.display = "block";
+    }
   </script>
       
     </body>
