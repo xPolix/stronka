@@ -103,7 +103,7 @@ h5 {
 .zoom {
   padding: 50px;
   border: 5px solid #555;
-  background-image:  url('menu_bindy.png');
+  background-image:  url('menu_bind.png');
   transition: transform .3s;
   width: 150px;
   height: 250px;
