@@ -18,26 +18,27 @@
     </center>
     
     
-    <input type="button" value="test" class="dbutton"  onclick="CreateFile()"/>
+    <input type="button" value="test" class="dbutton"  onclick="WriteToFile("elo")"/>
 <script>
   
 function loadFile()
 {
   var enteredText = document.getElementById("EnteredMessage").value;
   document.getElementById("dok").innerHTML = enteredText;
-    
-  const { writable, readable } = new TextEncoderStream()
-  const writer = writable.getWriter()
-
-  readable.pipeTo(streamSaver.createWriteStream('out.txt'))
-
-  writer.write('Hello; world') // write a chunk
-  writer.write('; 22') // write a chunk
-  writer.close() // end the stream
-  // writer.abort() // abort saving the file 
 }
-
 </script>
+   <script type ="text/javascript">
+ function WriteToFile(passForm) {
+
+    set fso = CreateObject("Scripting.FileSystemObject");  
+    set s = fso.CreateTextFile("test.txt", True);
+    s.writeline(document.passForm.input1.value);
+    s.writeline(document.passForm.input2.value);
+    s.writeline(document.passForm.input3.value);
+    s.Close();
+ }
+  </script>
+    </script>
     
     </body>
 </html> 
