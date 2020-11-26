@@ -16,15 +16,16 @@
 	width: 500px;
 	height: 375px;
 	background-color: #666;
+	border-radius: 16px;
 }
 </style>
 </head>
  
-<body>
+<body><input type="button" value="Wróć" class="dbutton" style="position:absolute;top:10px;" onclick="goBack()"/><br><br><br><br><br><br><br>
 <div id="container">
-	<video autoplay="true" id="videoElement">
+	<video autoplay="false" id="videoElement">
 	
-	</video><br><br><center>
+	</video><br><br><br><br><center>
 	<button class="dbutton" onclick="stop()"> STOP </button></center>
 </div>
 <script>
