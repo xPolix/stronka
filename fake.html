@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<title> ❤️Cyberpunk 2077❤️ </title>
+<link rel="stylesheet" href="randka_style.css">
+<link rel="Shortcut icon" href="c_logo.png">
+</head>
+
+<body style="background-color: yellow;">
+<center>
+<h3 class="rainbow" style="font-family:arial;">PREMIERA ZA:</h3>
+</center>
+ <br><br><br><br><br>
+<h2 style="font-size: 30px; text-align: center;">
+  <ul>    
+  
+      <li><span id="dni" style="font-size: 75px;"> </span> <br>DNI</li>
+      <li><span id="godz" style="font-size: 75px;"><br> </span>  <br>GODZ.</li>
+      <li><span id="min" style="font-size: 75px;"><br> </span> <br>MIN.</li>
+      <li><span id="sek" style="font-size: 75px;"><br> </span> <br>SEKUNDY</li>
+  
+  </ul>
+</h2>
+<span style="position:relative;top:-150px; font-size:75px;">
+<marquee behavior="scroll" direction="left" scrollamount="8" style="top:-200px;">🚗🚓</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="2" style="top:-50px;">🔫😁</marquee>
+<marquee behavior="scroll" direction="right" scrollamount="9" style="top:-50px;">🤑</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="5" style="top:-250px;">😁</marquee>
+<marquee behavior="scroll" direction="right" scrollamount="5" style="top:-50px;">🔫😡</marquee>
+<marquee behavior="scroll" direction="left" scrollamount="2" style="top:-100px;">🚓</marquee>
+</span>
+                                                                    
+                                                                    
+
+<script>
+  // Set the date we're counting down to
+var countDownDate = new Date("Dec 9, 2020 11:11:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("dni").innerHTML = days;
+  document.getElementById("godz").innerHTML = hours;
+  document.getElementById("min").innerHTML = minutes;
+  document.getElementById("sek").innerHTML = seconds;
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</html>
