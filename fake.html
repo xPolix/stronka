@@ -14,10 +14,10 @@
 <h2 style="font-size: 30px; text-align: center;">
   <ul>    
   
-      <li><span id="dni" style="font-size: 75px;"> </span> <br><p id="test">DNI</p></li>
-      <li><span id="godz" style="font-size: 75px;"><br> </span>  <br>GODZ.</li>
-      <li><span id="min" style="font-size: 75px;"><br> </span> <br>MIN.</li>
-      <li><span id="sek" style="font-size: 75px;"><br> </span> <br>SEKUNDY</li>
+      <li><span id="dni" style="font-size: 75px;"> </span> <br><p id="xdni">DNI</p></li>
+      <li><span id="godz" style="font-size: 75px;"><br> </span>  <br><p id="xgodz">GODZ.</p></li>
+      <li><span id="min" style="font-size: 75px;"><br> </span> <br><p id="xmin">MIN.</p></li>
+      <li><span id="sek" style="font-size: 75px;"><br> </span> <br><p id="sek">SEKUNDY</p></li>
   
   </ul>
 </h2>
@@ -60,10 +60,14 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-  document.getElementById("test").innerHTML = "LOL";
+  document.getElementById("dni").innerHTML = "LOL";
   document.getElementById("godz").innerHTML = "BER";
   document.getElementById("min").innerHTML = "PUNK";
   document.getElementById("sek").innerHTML = "2077";
+  document.getElementById("xdni").innerHTML = "GRA";
+  document.getElementById("xgodz").innerHTML = "MY";
+  document.getElementById("xmin").innerHTML = "KU";
+  document.getElementById("xsek").innerHTML = "WA";
   }
 }, 1000);
 </script>
